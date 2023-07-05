@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d699f29e62.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id ="header">
+        <div class="container">
+            <nav>
+                <img src="./images/newLogo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav> 
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span>Dipali</span> </h1>
+            </div>      
+        </div>
+    </div>
+    <!-- ------------About me----------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/IMG_3279 (2).jpeg">
+                </div>
+                    <div class="about-col-2">
+                        <h1 class ="sub-title">About Me</h1>
+                        <p>As an aspiring JavaScript developer, I am enthusiastic about transitioning my career into the realm of web
+                            development. While I am currently in the early stages of gaining practical experience in JavaScript, my passion for
+                            the language and commitment to learning are unwavering. To start the journey in development I have completed <em><b>
+                            "JavaScript Basics", "The Complete SQL Bootcamp" and "Learn JAVA Programming Beginner to Master"</b></em>
+                            courses from various platforms. With a solid foundation in programming principles and a strong desire to excel,
+                            I am eager to embark on a journey of growth and development in the field. I am open to exploring various roles
+                            within JavaScript development and dedicated to acquiring the necessary skills and knowledge to contribute
+                            effectively. With an open mind and a drive for continuous improvement, I am ready to embrace opportunities
+                            that allow me to apply my enthusiasm for JavaScript and make a positive impact in the world of web
+                            development.</p>
+                            <div id="tab-titles">
+                                <p class= "tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                                <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links"onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span> JavaScript / CSS & HTML </span><br> Frontend Developer / JavaScript Developer  / Backend Developer <br> React / Database: PostgreSQL / JSON / XML/ Github / CICD / Basics Of Docker & Kubernetes / Jira Tool</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li> <span>Systems Engineer</span><br>
+                                        Infosys [ 01/04/2021 – 19/04/2023 ] <br><span>Application engineer</span> <br>
+                                        SVC India [ 18/01/2013 – 31/05/2015 ]</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span> Bachelor of Engineering</span><br>
+                                        Yashvantrao Chavan College Of Engineering [ 2008 – 2012 ]  <br> <span> Diploma In Electrical Engineering </span><br>
+                                        Government Polytechnic [ 2005 – 2008 ]
+                                    </li>
+                                </ul>
+                            </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-----------------------Services------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class ="sub-title">My Services</h1>
+                 
+                <div class="services-list">
+                <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>With a passion for web development and a commitment to delivering outstanding results, I am excited about the opportunity to contribute to your success.<br> My personal portfolio represents a collection of projects that demonstrate my skills, creativity, and dedication to achieving remarkable outcomes.<br> Let's connect and discuss how I can leverage my expertise to bring your ideas to life and help your business thrive in the digital realm. Together, we can unlock endless possibilities.</p>
+                <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-file"></i>
+                <h2>Frontend Development</h2>
+                <p>I have expertise in front-end development technologies such as HTML, CSS, and JavaScript. This allows me to translate design concepts into clean, semantic code that ensures fast-loading web pages and seamless interactivity. By staying up to date with the latest industry trends and best practices, I deliver modern and forward-thinking front-end solutions that elevate the user experience.</p>
+                <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                <h2>Backend Development</h2>
+                <p>With a deep understanding of JavaScript backend development and a commitment to excellence, I am eager to contribute my skills to your next project. My personal portfolio showcases a range of projects that demonstrate my ability to build scalable, efficient, and high-performance web applications. Let's connect and discuss how I can leverage my expertise to transform your vision into reality, delivering cutting-edge solutions that propel your business forward. Together, we can build powerful web applications that exceed expectations and drive success.</p>
+                <a href="#">learn more</a>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <!-------------------------Contact------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> contact@example.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 0123-4567890</p>
+                    <div class="social-icons">
+                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                     <a href="https://www.linkedin.com/in/dipali-talware-0578a861/"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://business.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                        <a href="./images/CV_DipaliTalware_Developer.pdf" download= "CV_DipaliTalware_Developer" class="btn btn2">Download CV</a>
+            </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type= "text" name ="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+                </div>
+                <div class="copyright"><p>copyright © Dipali made for personal portifolio</p></div>
+        </div>
+    </div>
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sideMenu =document.getElementById("sidemenu");
+        function openMenu(){
+            sideMenu.style.right ="0";
+        }
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyZk-x_AItselOyGlJdif0h-WCgJoNBqZo2zrOgJ3zT0eIpEWRGTx60R5L_vNTQfjluog/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
